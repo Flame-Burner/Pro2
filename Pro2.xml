@@ -15,11 +15,11 @@
                 <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
-            <statement name="DO0">
-              <block type="movement_stop" id="4"></block>
-            </statement>
           </block>
         </statement>
+        <next>
+          <block type="movement_stop" id="4"></block>
+        </next>
       </block>
     </next>
   </block>
