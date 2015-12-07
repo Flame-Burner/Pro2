@@ -15,6 +15,9 @@
                 <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
+            <statement name="DO0">
+              <block type="movement_reverse" id="87"></block>
+            </statement>
           </block>
         </statement>
         <next>
