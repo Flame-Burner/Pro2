@@ -3,6 +3,11 @@
     <next>
       <block type="controls_whileUntil" id="2" inline="false">
         <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="sensor_object" id="97">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
         <statement name="DO">
           <block type="controls_if" id="11" inline="false">
             <value name="IF0">
