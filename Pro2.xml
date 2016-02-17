@@ -2,12 +2,25 @@
   <block type="controls_whileUntil" id="7" inline="false" x="80" y="81">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
-      <block type="sensor_object" id="29">
-        <field name="OBJECT">LEFTFRONT</field>
+      <block type="sensor_button" id="97">
+        <field name="OBJECT">UP</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_stop" id="39"></block>
+      <block type="controls_if" id="76" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="sensor_object" id="29">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_stop" id="39"></block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="90"></block>
+        </statement>
+      </block>
     </statement>
   </block>
 </xml>
