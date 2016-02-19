@@ -31,7 +31,7 @@
                 <field name="ACTION">ON</field>
                 <value name="LED">
                   <block type="math_number" id="108">
-                    <field name="NUM">6</field>
+                    <field name="NUM">5</field>
                   </block>
                 </value>
               </block>
