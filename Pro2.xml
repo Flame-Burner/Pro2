@@ -48,10 +48,10 @@
         <statement name="ELSE">
           <block type="movement_forward" id="12"></block>
         </statement>
-        <next>
-          <block type="movement_stop" id="13"></block>
-        </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="13"></block>
+    </next>
   </block>
 </xml>
