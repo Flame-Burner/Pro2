@@ -10,16 +10,16 @@
       <block type="controls_if" id="3" inline="false">
         <mutation else="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="20" inline="true">
-            <field name="OP">LT</field>
+          <block type="logic_operation" id="87" inline="true">
+            <field name="OP">LAND</field>
             <value name="A">
-              <block type="sensor_spectrometer" id="13">
-                <field name="LIGHT">BLUE</field>
+              <block type="sensor_object" id="80">
+                <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="58">
-                <field name="NUM">50</field>
+              <block type="sensor_object" id="94">
+                <field name="OBJECT">RIGHTFRONT</field>
               </block>
             </value>
           </block>
