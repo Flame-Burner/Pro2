@@ -8,28 +8,49 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="3" inline="false">
-        <mutation else="1"></mutation>
+        <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
-          <block type="logic_operation" id="87" inline="true">
+          <block type="logic_operation" id="4" inline="true">
             <field name="OP">LAND</field>
             <value name="A">
-              <block type="sensor_object" id="80">
+              <block type="sensor_object" id="5">
                 <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
             <value name="B">
-              <block type="sensor_object" id="94">
+              <block type="sensor_object" id="6">
                 <field name="OBJECT">RIGHTFRONT</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_stop" id="5"></block>
+          <block type="movement_stop" id="7"></block>
+        </statement>
+        <value name="IF1">
+          <block type="logic_operation" id="8" inline="true">
+            <field name="OP">LAND</field>
+            <value name="A">
+              <block type="sensor_object" id="9">
+                <field name="OBJECT">LEFTSIDE</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="sensor_object" id="10">
+                <field name="OBJECT">RIGHTSIDE</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="movement_stop" id="11"></block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="6"></block>
+          <block type="movement_forward" id="12"></block>
         </statement>
+        <next>
+          <block type="movement_stop" id="13"></block>
+        </next>
       </block>
     </statement>
   </block>
