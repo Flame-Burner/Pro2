@@ -112,7 +112,27 @@
                   <block type="movement_forward" id="27"></block>
                 </statement>
                 <statement name="ELSE">
-                  <block type="movement_stop" id="28"></block>
+                  <block type="led_select" id="47" inline="true">
+                    <field name="ACTION">FLASH</field>
+                    <value name="LED">
+                      <block type="math_number" id="48">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="led_select" id="49" inline="true">
+                        <field name="ACTION">FLASH</field>
+                        <value name="LED">
+                          <block type="math_number" id="50">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_stop" id="28"></block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </statement>
               </block>
             </next>
