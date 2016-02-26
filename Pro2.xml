@@ -113,7 +113,7 @@
                 </statement>
                 <statement name="ELSE">
                   <block type="led_select" id="47" inline="true">
-                    <field name="ACTION">FLASH</field>
+                    <field name="ACTION">ON</field>
                     <value name="LED">
                       <block type="math_number" id="48">
                         <field name="NUM">1</field>
@@ -121,7 +121,7 @@
                     </value>
                     <next>
                       <block type="led_select" id="49" inline="true">
-                        <field name="ACTION">FLASH</field>
+                        <field name="ACTION">ON</field>
                         <value name="LED">
                           <block type="math_number" id="50">
                             <field name="NUM">4</field>
