@@ -112,23 +112,23 @@
                   <block type="movement_forward" id="27"></block>
                 </statement>
                 <statement name="ELSE">
-                  <block type="led_select" id="47" inline="true">
+                  <block type="led_select" id="28" inline="true">
                     <field name="ACTION">ON</field>
                     <value name="LED">
-                      <block type="math_number" id="48">
+                      <block type="math_number" id="29">
                         <field name="NUM">1</field>
                       </block>
                     </value>
                     <next>
-                      <block type="led_select" id="49" inline="true">
+                      <block type="led_select" id="30" inline="true">
                         <field name="ACTION">ON</field>
                         <value name="LED">
-                          <block type="math_number" id="50">
+                          <block type="math_number" id="31">
                             <field name="NUM">4</field>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_stop" id="28"></block>
+                          <block type="movement_stop" id="32"></block>
                         </next>
                       </block>
                     </next>
