@@ -49,48 +49,28 @@
           <block type="movement_forward" id="12"></block>
         </statement>
         <next>
-          <block type="controls_if" id="23" inline="false">
+          <block type="controls_if" id="13" inline="false">
             <mutation else="1"></mutation>
             <value name="IF0">
-              <block type="logic_compare" id="24" inline="true">
+              <block type="logic_compare" id="14" inline="true">
                 <field name="OP">LT</field>
                 <value name="A">
-                  <block type="sensor_object" id="25">
+                  <block type="sensor_object" id="15">
                     <field name="OBJECT">REAR</field>
                   </block>
                 </value>
                 <value name="B">
-                  <block type="math_number" id="26">
+                  <block type="math_number" id="16">
                     <field name="NUM">65</field>
                   </block>
                 </value>
               </block>
             </value>
             <statement name="DO0">
-              <block type="movement_forward" id="27"></block>
+              <block type="movement_forward" id="38"></block>
             </statement>
             <statement name="ELSE">
-              <block type="led_select" id="28" inline="true">
-                <field name="ACTION">ON</field>
-                <value name="LED">
-                  <block type="math_number" id="29">
-                    <field name="NUM">1</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="led_select" id="30" inline="true">
-                    <field name="ACTION">ON</field>
-                    <value name="LED">
-                      <block type="math_number" id="31">
-                        <field name="NUM">4</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="movement_stop" id="32"></block>
-                    </next>
-                  </block>
-                </next>
-              </block>
+              <block type="movement_stop" id="48"></block>
             </statement>
           </block>
         </next>
