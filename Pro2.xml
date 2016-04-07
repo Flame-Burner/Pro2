@@ -7,74 +7,72 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="3" inline="false">
-        <mutation elseif="1" else="1"></mutation>
+      <block type="controls_if" id="13" inline="false">
+        <mutation else="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="4" inline="true">
+          <block type="logic_compare" id="14" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="5">
-                <field name="OBJECT">LEFTFRONT</field>
+              <block type="sensor_object" id="15">
+                <field name="OBJECT">REAR</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="6">
+              <block type="math_number" id="16">
                 <field name="NUM">65</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_right" id="7"></block>
-        </statement>
-        <value name="IF1">
-          <block type="logic_compare" id="8" inline="true">
-            <field name="OP">LT</field>
-            <value name="A">
-              <block type="sensor_object" id="9">
-                <field name="OBJECT">RIGHTFRONT</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="10">
-                <field name="NUM">65</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO1">
-          <block type="movement_left" id="11"></block>
+          <block type="movement_forward" id="17"></block>
         </statement>
         <statement name="ELSE">
-          <block type="movement_forward" id="12"></block>
+          <block type="movement_stop" id="18"></block>
         </statement>
-        <next>
-          <block type="controls_if" id="13" inline="false">
-            <mutation else="1"></mutation>
-            <value name="IF0">
-              <block type="logic_compare" id="14" inline="true">
-                <field name="OP">LT</field>
-                <value name="A">
-                  <block type="sensor_object" id="15">
-                    <field name="OBJECT">REAR</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="16">
-                    <field name="NUM">65</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <statement name="DO0">
-              <block type="movement_forward" id="17"></block>
-            </statement>
-            <statement name="ELSE">
-              <block type="movement_stop" id="18"></block>
-            </statement>
-          </block>
-        </next>
       </block>
+    </statement>
+  </block>
+  <block type="controls_if" id="19" inline="false" x="743" y="522">
+    <mutation elseif="1" else="1"></mutation>
+    <value name="IF0">
+      <block type="logic_compare" id="20" inline="true">
+        <field name="OP">LT</field>
+        <value name="A">
+          <block type="sensor_object" id="21">
+            <field name="OBJECT">LEFTFRONT</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="22">
+            <field name="NUM">65</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="movement_right" id="23"></block>
+    </statement>
+    <value name="IF1">
+      <block type="logic_compare" id="24" inline="true">
+        <field name="OP">LT</field>
+        <value name="A">
+          <block type="sensor_object" id="25">
+            <field name="OBJECT">RIGHTFRONT</field>
+          </block>
+        </value>
+        <value name="B">
+          <block type="math_number" id="26">
+            <field name="NUM">65</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO1">
+      <block type="movement_left" id="27"></block>
+    </statement>
+    <statement name="ELSE">
+      <block type="movement_forward" id="28"></block>
     </statement>
   </block>
 </xml>
