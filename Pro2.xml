@@ -24,6 +24,9 @@
           </block>
         </value>
         <statement name="DO0">
+          <block type="movement_stop" id="141"></block>
+        </statement>
+        <next>
           <block type="controls_if" id="3" inline="false">
             <mutation elseif="1" else="1"></mutation>
             <value name="IF0">
@@ -92,7 +95,7 @@
               </block>
             </next>
           </block>
-        </statement>
+        </next>
       </block>
     </statement>
   </block>
